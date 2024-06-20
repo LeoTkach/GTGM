@@ -189,10 +189,11 @@ textarea {
 #language-switcher {
   display: flex;
   justify-content: flex-end; /* Выравнивание переключателя справа */
-  margin-top: 50px;
-  margin-bottom: -80px;
+  margin-top: 100px; /* Увеличено значение */
+  margin-bottom: -105px; /* Уменьшено отрицательное значение */
   margin-right: 200px;
 }
+
   
 .language-option {
   cursor: pointer;
@@ -239,6 +240,7 @@ lt[data-lang="en"] {
 .dropdown:hover .dropbtn {
   background-color: #FAC905; /* изменение цвета кнопки при наведении */
 }
+
 /* Стили для контейнера меню */
 .dropdown {
   position: relative;
@@ -260,7 +262,6 @@ lt[data-lang="en"] {
 /* Показывать меню при наведении на кнопку */
 .dropdown:hover .dropdown-content {
   display: block;
-  
 }
 
 /* Стили для ссылок в меню */
@@ -284,5 +285,23 @@ lt[data-lang="en"] {
 .dropdown-content a:hover {
   background-color: #8FABBF;
 }
+
+/* Медиазапросы для смартфонов */
+@media screen and (max-width: 600px) {
+  .dropbtn {
+    padding: 10px 30px;
+    font-size: 15px; /* Уменьшить размер шрифта */
+  }
+
+  .dropdown-content {
+    min-width: 105px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 12px;
+    font-size: 15px; /* Уменьшить размер шрифта */
+  }
+}
+
 
 
