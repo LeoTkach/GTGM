@@ -1,0 +1,307 @@
+/* Загальні стилі */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #08011a; */
+  background: linear-gradient(135deg, #1b074e,#08011a );
+  /* Додайте стилі для відео на фоні */
+  position: relative;
+  /* height: 100%;
+  margin: 0; */
+
+}
+
+
+#background-video {
+  position: absolute;
+  top: -15%; /* Зсуваємо відео вгору */
+  left: -15%; /* Зсуваємо відео вліво */
+  width: 130%; /* Збільшуємо ширину на 30% */
+  height: 100%; /* Збільшуємо висоту на 30% */
+  z-index: -1;
+  
+}
+
+/* стилі для контейнера змісту */
+#content {
+  position: relative;
+  z-index: 0;
+ /* Розрахунок висоти контейнера для прокрутки */
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 0px; /* збереження простору для заголовка та навігації */
+  padding-bottom: 30px; /* Додано паддинг для простору перед футером */
+  padding-left: 90px;
+  padding-right: 90px;      
+  overflow-y: auto; /* Дозволяє прокручувати зміст вертикально */
+  background-color: #0c2340; /* Полупрозорий фон */
+  box-shadow: 0 0 10px rgba(224, 220, 220, 0.1);
+  border-radius: 20px;
+  opacity: 0.8;
+  /* flex: 1; */
+}
+
+/* Стилі для заголовка */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #16afa8;
+  font-size: 42px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Стилі для навігації */
+nav {
+  background-color: #333;
+  /* text-align: center; */
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #666;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-top: 24px;
+  color:  #97a328;
+  font-size: 36px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: #BFAC8F;
+  line-height: 1.6;
+  font-size: 17px;
+  text-align: justify; /* Растягивает текст по ширине */
+}
+
+
+iframe {
+  width: 560px;
+  height: 315px;
+  /* margin: 0 auto; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для футера */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 50px;
+  bottom: 10;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  color: #666;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+/* Стилі для форми зворотнього зв'язку */
+input[type="text"],
+input[type="email"],
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3753af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Стилі для соціальних мереж */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  text-align: center; /* Центрування по горизонталі */
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li a i {
+  font-size: 36px;
+  transition: transform 0.3s ease;
+  color: #555;
+}
+
+ul li a:hover i {
+  transform: scale(1.2);
+  color: #000;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  resize: vertical; /* Розтягувати тільки по вертикалі */
+}
+
+/* Стили для переключателя языков */
+#language-switcher {
+  display: flex;
+  justify-content: flex-end; /* Выравнивание переключателя справа */
+  margin-top: 100px; /* Увеличено значение */
+  margin-bottom: -105px; /* Уменьшено отрицательное значение */
+  margin-right: 200px;
+}
+
+  
+.language-option {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #ccc; /* Цвет по умолчанию для неактивных опций */
+  text-decoration: underline;
+  text-decoration-color: #0581be; /* Цвет подчеркивания */
+  text-underline-offset: 3px; /* Расстояние между текстом и подчеркиванием */
+  text-decoration-thickness: 3px;
+  
+}
+  
+.language-option.active {
+  color: #fff; /* Цвет для активной опции */
+  text-decoration: none; /* Убираем подчеркивание у активной опции */
+}
+
+lt {
+  background-image: linear-gradient(to right, #c2b60c, #0858a8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}   
+lt[data-lang="en"] {
+  background-image: linear-gradient(to right, #ff0000,#dddde2, #0000ff); /* Другой градиент для EN */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Стили для кнопки меню */
+.dropbtn {
+  background-color: #A5903A; /* коричневый цвет */
+  color: #504B37;
+  padding: 12px 50px;
+  font-size: 22px; /* Увеличить размер шрифта */
+  font-family: 'Roboto', sans-serif; /* Изменить тип шрифта */
+  font-weight: bold; /* Сделать шрифт жирным */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Стили для меню при наведении */
+.dropdown:hover .dropbtn {
+  background-color: #FAC905; /* изменение цвета кнопки при наведении */
+}
+
+/* Стили для контейнера меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Стили для всплывающего меню */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3da9d4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #2e2d2c;
+  z-index: 1;
+  top: 100%;
+  border-radius: 4px;
+}
+
+/* Показывать меню при наведении на кнопку */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Стили для ссылок в меню */
+.dropdown-content a {
+  color: #2B3133; /* цвет текста */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #227477; /* добавление разделителей между пунктами */
+  font-size: 22px; /* Увеличить размер шрифта */
+  font-family: 'Roboto', sans-serif; /* Изменить тип шрифта */
+  text-align: center;
+}
+
+/* Стили для последней ссылки (без разделителя) */
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+/* Стили для ссылок при наведении */
+.dropdown-content a:hover {
+  background-color: #8FABBF;
+}
+
+/* Медиазапросы для смартфонов */
+@media screen and (max-width: 1080px) {
+  .dropbtn {
+    padding: 10px 30px;
+    font-size: 15px; /* Уменьшить размер шрифта */
+  }
+
+  .dropdown-content {
+    min-width: 105px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 12px;
+    font-size: 15px; /* Уменьшить размер шрифта */
+  }
+}
+
+
+
