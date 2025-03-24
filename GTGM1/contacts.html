@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="language-switcher">
+    <span class="language-option active" data-lang="en"><lt data-lang="en"><a href="contacts-en.html">EN</a><lt data-lang="en"></span>
+    <span class="language-option" data-lang="ua"><lt>UA</lt></span>
+  </div>
+
+  <!-- Відео на фоні (можна залишити або замінити) -->
+
+  
+  <header>
+    <h1>Сонячна система</h1>
+  </header>
+
+  <!-- Панель навігації -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Меню</button>
+      <div class="dropdown-content">
+        <a href="index.html">Головна</a>
+        <a href="Sun.html">Сонце</a>
+        <a href="Mercury.html">Меркурій</a>
+        <a href="Venus.html">Венера</a>
+        <a href="Earth.html">Земля</a>
+        <a href="Mars.html">Марс</a>
+        <a href="Jupiter.html">Юпітер</a>
+        <a href="Saturn.html">Сатурн</a>
+        <a href="Uranus.html">Уран</a>
+        <a href="Neptune.html">Нептун</a>
+        <a href="contacts.html">Контакти</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="content">
+    <!-- Форма зворотнього зв'язку -->
+    <div style="max-width: 800px;  margin: 60px auto; padding: 40px; background-color: #f4f4f4; border-radius: 5px;">
+      <h2>Зв'яжіться зі мною</h2>
+      <form>
+        <div style="margin-bottom: 15px;">
+          <label for="name">Ваше ім'я</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="message">Ваше повідомлення</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+
+    <!-- Відображення соціальних мереж -->
+    <h2>Мої соціальні мережі</h2>
+    <ul>
+      <li><a href="https://t.me/kasatkich" target="_blank"><i class="fab fa-telegram" style="color: #2390c7;"></i></a></li>
+      <li><a href="https://www.instagram.com/kasatkich" target="_blank"><i class="fab fa-instagram" style="color: #ee7a37;"></i></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Сонячна система. Усі права захищено.</p>
+  </footer>
+</body>
+</html>
